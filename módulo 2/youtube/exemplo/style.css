@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right,#D9B0BB, #b3929b, #92797f);
+}
+
+p {
+    text-align:justify;
+}
+
+main {
+    background-color: white; /*Cor de fundo do texto*/
+    width: 600px; /*Tamanho do coiso do texto*/
+    margin: auto; /*Centralização do texto*/
+    border-radius: 10px; /*Deixa as bordas arredondadas*/
+    padding: 10px; /*Só da uma "engordadinha" no coiso*/
+    box-shadow: 5px/*Quanto a sombra vai andar para o lado*/ 5px/*Quanto a sombra vai andar para baixo */ 15px /*Quanto essa sombra vai se espalhar*/ #8d737a ; /*Transparência/cor da sombra*/  /*Sombra do texto*/
+}
+
+h1 {
+    color: #7C778C;
+}
+h2 {
+    color: #7e6981;
+}
