@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+table {
+    margin: auto;
+    border-collapse: collapse; 
+}
+td {
+    border: 1px solid black;
+    padding-right: 4em;
+}
+td:hover {
+    transition: 0.5s;
+    background-color: yellow;
+}
