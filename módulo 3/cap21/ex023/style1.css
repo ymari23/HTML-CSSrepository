@@ -7,12 +7,34 @@
 table {
     margin: auto;
     border-collapse: collapse; 
+    width: 400px;
+    height: 400px;
 }
-td {
+td, th {
     border: 1px solid black;
-    padding-right: 4em;
+    vertical-align: top;
+    padding: 3px;
 }
-td:hover {
-    transition: 0.5s;
-    background-color: yellow;
+tbody > tr:nth-child(even) {
+    background-color: lightgray;
+}
+.numero {
+    text-align: right;
+}
+thead, tfoot {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color:rgb(78, 78, 78) ;
+}
+caption {
+    font-weight:500;
+    background-color: lightgray;
+    font-size: 1.2em;
+}
+main {
+    text-align: left;
 }
