@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe001 testando o uso de <iframe src="" frameborder="0"></iframe></title>
+    <style>
+        @charset "UTF-8";
+        * {
+            font-family: sans-serif;
+        }
+        a {
+            text-decoration:none;
+        }
+        iframe {
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <p>Os iframes servem para você adicionar uma janela dentro do site</p>
     <p>Exemplo:</p>
-    <iframe src="https://ymari23.github.io/M-sica/Musicaa/Musica/" frameborder="0"></iframe>
-    <p>Site <a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="_blank">Hipnotizou</a></p>
-    <p>Também temos o site do <a href="https://www.google.com.br/?hl=pt-BR">Google</a></p>
-    <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+    <iframe src="https://ymari23.github.io/M-sica/Musicaa/Musica/" frameborder="0" height="568px" width="320px"></iframe>
+    <p>Aqui temos o meu site <a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="_blank">Hipnotizou</a> que está sendo exibido em uma tela que simula um iphone 5</p>
+    <p>Também temos o site da <a href="https://www.google.com.br/?hl=pt-BR">Google</a>, que está indisponível pois ela tem segurança contra iframes, simulado em uma tela de Laptop</p>
+    <iframe src="https://www.google.com.br" frameborder="0" height="1050px" width="1440px"></iframe>
+    <p>E, por fim, o <a href="pag002 do ex026.html">site local</a> que eu criei apenas para usar de exemplo exibido em uma tela que simula um Ipad</p>
+    <iframe src="pag002 do ex026.html" frameborder="0" height="768px" width="1440px"><a href="pag002 do ex026.html">site local</a></iframe>
 </body>
 </html>
