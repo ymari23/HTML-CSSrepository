@@ -15,6 +15,7 @@
         iframe {
             display: block;
             margin: auto;
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -23,9 +24,33 @@
     <p>Exemplo:</p>
     <iframe src="https://ymari23.github.io/M-sica/Musicaa/Musica/" frameborder="0" height="568px" width="320px"></iframe>
     <p>Aqui temos o meu site <a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="_blank">Hipnotizou</a> que está sendo exibido em uma tela que simula um iphone 5</p>
-    <p>Também temos o site da <a href="https://www.google.com.br/?hl=pt-BR">Google</a>, que está indisponível pois ela tem segurança contra iframes, simulado em uma tela de Laptop</p>
-    <iframe src="https://www.google.com.br" frameborder="0" height="1050px" width="1440px"></iframe>
+    <p>Também temos o site da <a href="https://www.google.com.br/?hl=pt-BR">Google</a>, que está indisponível pois ela tem segurança contra iframes, simulado em uma tela de Iphone 5 (de novo)</p>
+    <iframe src="https://www.google.com.br" frameborder="0" height="568px" width="320px"></iframe>
     <p>E, por fim, o <a href="pag002 do ex026.html">site local</a> que eu criei apenas para usar de exemplo exibido em uma tela que simula um Ipad</p>
     <iframe src="pag002 do ex026.html" frameborder="0" height="768px" width="1440px"><a href="pag002 do ex026.html">site local</a></iframe>
+    <h2>Também podemos escolher qual desses sites exibir</h2>
+    <ul>
+        <li><a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="frame">Hipnotizou</a></li>
+        <li><a href="https://www.google.com.br/?hl=pt-BR" target="frame">Google</a></li>
+        <li><a href="pag002 do ex026.html" target="frame">Site local</a></li>
+    </ul>
+    <iframe srcdoc="<h1> Escolhe 1 dos 3 </h1> <p> Escolhe 1 ae pfv </p> <img src='imagens/lol.png' width= '200vw' height= '200px'></img>'" name="frame" frameborder="0" height="500px" width="1000vw"></iframe>
+    <h2>Cuidado com quem entra na sua casa...</h2>
+    <p>Por mais que o iframe seja uma coisa bem interessante, sabemos que ele tem seus altos e baixos, servindo para algumas situações específicas e outras não. No entanto, também devemos prestar MUITA atenção nos sites que colocamos nele, se não, a página web que você colocou no iframe pode pegar os dados do usuário, executar alguns scripts (dependendo do site, scripts maliciosos) e fazer coisas horríveis que não irei mencionar.</p>
+    <p>E é exatamente por isso que existem esses dois parâmetros dentro do iframe: Sandbox (define as permissões do usuário como enviar formulários ou executar scripts) e referrerpolicy (que define a permissão do site de pegar os dados do usuário)</p>
+    <iframe src="sites/form.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">Formulário</iframe>
+    <p>Conseguiu se cadastrar? Eu coloquei a proteção máxima no iframe, então imagino que a única coisa que você pode fazer agora é escrever seu nickname e ver o nada acontecer. </p>
+    <p>Os parâmetros que eu usei foram sandbox="sandbox" referrerpolicy="no-referrer", então você não pode interagir com o site e ele não pode realizar a coleta de dados.</p>
+    <p>Mas, e seu eu te desse permissão de interagir com ele?</p>
+    <iframe src="sites/form.html" frameborder="1" sandbox="allow-same-origin allow-forms" referrerpolicy="no-referrer" >Formulário</iframe>
+    <p>E agora? Conseguiu se cadastrar? Não se preocupe se der erro, eu não tenho banco de dados para esse site. Mas se eu tivesse, seu cadastro teria sido bem sucedido. </p>
+    <p>Agora as configurações usadas foram: sandbox="allow-same-origin allow-forms" referrerpolicy="no-referrer", isso significa que a config. que define suas permissões de interação com o site (sandbox) fossem apenas "permitir coisas da mesma origem" e "permitir formulários", respectivamente. Ele também continua sem coletar seus dados (referrerpolicy:"no-referrer") </p>
+    <iframe src="sites/script.html" frameborder="1"></iframe>
+    <p>User23212: Que site legal! Estou clicando e recebendo uma resposta! Muito interativo!</p>
+    <p>Mal sabe o usuário o que alguns scripts podem fazer...</p>
+    <p>Eu tento impedir o mal que pode vir?</p>
+    <a href="sites/script.html" class="resposta" target="sitesuspeito">É melhor eu impedir</a> <a href="sites/vírus.html" class="resposta" target="sitesuspeito">Problema dele, ninguém mandou ser burro</a>
+    <iframe srcdoc="<h1>...</h1>" name="sitesuspeito" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+    <p>Parabéns se você impediu, User23212 te agradece</p>
 </body>
 </html>
