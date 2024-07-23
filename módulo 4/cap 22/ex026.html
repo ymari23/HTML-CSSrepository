@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe001 testando o uso de <iframe src="" frameborder="0"></iframe></title>
+    <link rel="stylesheet" href="sites/style.css">
     <style>
         @charset "UTF-8";
         * {
@@ -20,7 +21,10 @@
     </style>
 </head>
 <body>
-    <p>Os iframes servem para você adicionar uma janela dentro do site</p>
+    <header>
+        <h1>Resumindo IFRAMES cap 22</h1>
+        <p id="cabeçalho">Os iframes servem para você adicionar uma janela dentro do site</p>
+    </header>
     <p>Exemplo:</p>
     <iframe src="https://ymari23.github.io/M-sica/Musicaa/Musica/" frameborder="0" height="568px" width="320px"></iframe>
     <p>Aqui temos o meu site <a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="_blank">Hipnotizou</a> que está sendo exibido em uma tela que simula um iphone 5</p>
@@ -29,11 +33,13 @@
     <p>E, por fim, o <a href="pag002 do ex026.html">site local</a> que eu criei apenas para usar de exemplo exibido em uma tela que simula um Ipad</p>
     <iframe src="pag002 do ex026.html" frameborder="0" height="768px" width="1440px"><a href="pag002 do ex026.html">site local</a></iframe>
     <h2>Também podemos escolher qual desses sites exibir</h2>
-    <ul>
-        <li><a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="frame">Hipnotizou</a></li>
-        <li><a href="https://www.google.com.br/?hl=pt-BR" target="frame">Google</a></li>
-        <li><a href="pag002 do ex026.html" target="frame">Site local</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="https://ymari23.github.io/M-sica/Musicaa/Musica/" target="frame">Hipnotizou</a></li>
+            <li><a href="https://www.google.com.br/?hl=pt-BR" target="frame">Google</a></li>
+            <li><a href="pag002 do ex026.html" target="frame">Site local</a></li>
+        </ul>
+    </nav>
     <iframe srcdoc="<h1> Escolhe 1 dos 3 </h1> <p> Escolhe 1 ae pfv </p> <img src='imagens/lol.png' width= '200vw' height= '200px'></img>'" name="frame" frameborder="0" height="500px" width="1000vw"></iframe>
     <h2>Cuidado com quem entra na sua casa...</h2>
     <p>Por mais que o iframe seja uma coisa bem interessante, sabemos que ele tem seus altos e baixos, servindo para algumas situações específicas e outras não. No entanto, também devemos prestar MUITA atenção nos sites que colocamos nele, se não, a página web que você colocou no iframe pode pegar os dados do usuário, executar alguns scripts (dependendo do site, scripts maliciosos) e fazer coisas horríveis que não irei mencionar.</p>
