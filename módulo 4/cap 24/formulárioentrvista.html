@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="cadastro.php" method="post">
+        <label for="inome">
+           <p>Nome completo:</p>  <input type="text" name="nome" id="inome" required minlength="3">
+        </label>
+        <p>
+            <label for="iemail">
+                <p>E-mail:</p> <input type="email" name="email" id="iemail" required minlength="5" maxlength="45">
+            </label>
+        </p>
+        <p>
+            <label for="itel">
+                <p>Telefone:</p> <input type="tel" name="tel" id="itel" minlength="11" required>
+            </label>
+        </p>
+        <p>
+            <label for="ipergunta">
+                <p>Por que está interessado na vaga?</p> <input type="text" name="pergunta" id="ipergunta">
+            </label>
+        </p>
+        <p>
+            <label for="iq">
+                <p>Por que deveríamos te contratar?</p> <input type="text"
+                name="q" id="iq"
+                maxlength="100"
+                minlength="25"
+                 required>
+            </label>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>   
+</body>
+</html>
