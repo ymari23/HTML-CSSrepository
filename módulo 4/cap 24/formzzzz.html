@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form07</title>
+</head>
+<body>
+    <label for="iest">Estado de nascimento:</label>
+    <select name="est" id="iest">
+        <optgroup label="Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espírito Santo</option>
+            </optgroup>
+        <optgroup label="Sul">
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+        <optgroup label="Centro-Oeste">
+            <option value="MT">Mato Grosso</option>        
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="GO">Goiás</option>
+        </optgroup>            
+        <optgroup label="Nordeste">
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="SE">Sergipe</option>
+            <option value="CE">Ceará</option>
+            <option value="MA">Maranhão</option>
+            <option value="PI">Piauí</option>
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+        </optgroup>
+        <optgroup label="Norte">
+            <option value="AM">Amazonas</option>
+            <option value="RR">Roraima</option>
+            <option value="RO">Rondônia</option>
+            <option value="TO">Tocantins</option>
+            <option value="PA">Pará</option>
+            <option value="AC">Acre</option>
+            <option value="AP">Amapá</option>            
+        </optgroup>
+    </select>
+    <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option value="Aluno">Aluno</option>
+            <option value="Professor">Professor</option>
+            <option value="Diretor">Diretor</option>
+        </datalist>
+    </p>
+    
+        <p><label for="imsg">Mensagem para o dev:</label></p>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</body>
+</html>
