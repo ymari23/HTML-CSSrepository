@@ -12,12 +12,30 @@
                 <input type="text" name="Nome" id="inome">
         </p>
         <p><label for="ianonasc">Ano de nascimento: </label>
-        <input type="number" name="" id=""></p>
+        <input type="number" name="" id="" min="1900" max="2024" value="2000"></p>
         <p>
             <label for="sexo">Gênero: </label> <br>
             <input type="radio" name="sexo" id="masc" required> Masculino  <br>
             <input type="radio" name="sexo" id="fem" required> Feminino <br>
-            <input type="radio" name="sexo" id="prefn" required> Prefiro não  dizer <br>
+            
+        </p>
+        <p>
+            <label for="te">Trabalha ou estuda?</label> <br>
+            <input type="radio" name="te" id="itr" required> Trabalho <br>
+            <input type="radio" name="te" id="ies" required> Estudo
+        </p>
+
+
+
+
+
+
+
+
+
+        <p>
+            <p>Deixe uma mensagem ao dev:</p>
+            <textarea name="msg" id="imsg"></textarea>
         </p>
     </form>
 </body>
