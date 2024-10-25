@@ -1,0 +1,11 @@
+@charset "UTF_8";
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+menu {
+    display: none;
+}
+article::after {
+    content: 'Esse artigo foi impresso pelo o site www.sitenot.com';
+}
