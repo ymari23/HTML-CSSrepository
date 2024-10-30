@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h2::after {
+    content:  'Modo retrato' ;
+}
+
+body {
+    background-image: url("../imgs/cev-portrait.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #233eff;
+}
