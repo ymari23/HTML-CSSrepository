@@ -4,11 +4,12 @@ h2::after {
     content:  'Modo retrato' ;
 }
 
-body {
+body, html {
     background-image: url("../imgs/cev-portrait.jpg");
     
     background-repeat: no-repeat;
-    background-size: cover;
     
+    background-position:center bottom;
     background-color: #233eff;
+    
 }
